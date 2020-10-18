@@ -1,0 +1,9 @@
+.driving-instructions {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.map-container {
+    border-radius: 10;
+}
