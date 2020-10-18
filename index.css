@@ -1,4 +1,4 @@
-.driving-instructions {
+.driving-instructions, .transit-instructions {
     display: flex;
     justify-content: center;
     
@@ -6,4 +6,9 @@
 
 .map-container {
     border-radius: 10;
+}
+
+.addition, .parking {
+    display: flex;
+    justify-content: center;
 }
