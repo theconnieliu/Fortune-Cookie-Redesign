@@ -247,15 +247,21 @@ button:hover {
 
 .card-header {
     padding-left: 20px;
+    padding-right: 20px;
    
 }
 
 .card-body {
     display: flex;
+    flex-direction: column;
     padding-right: 20px;
 }
 
 .additional-body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Alegreya Sans', sans-serif;
+    padding-right: 20px;
     padding-left: 20px;
     padding-bottom: 20px;
 }
@@ -271,6 +277,10 @@ button:hover {
     .card {
         width: 100%;
     }
+}
+
+.garage-name {
+    font-weight: 700;
 }
 
 .phone-number {
