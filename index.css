@@ -4,7 +4,9 @@
 body {
     background-color: #FFF5E0;
     line-height: 1.5em;
+    
 }
+
 h1, h2, h3, footer, .nav-item {
     font-family: 'Alegreya', serif;  
     color: #541514;
@@ -15,41 +17,90 @@ hr {
 }
 
 .navbar-nav {
-    display: flex;    
+    display: flex;  
+    align-items: right;
+    list-style-type: none;  
 }
 
-.nav-item {
-    padding-left: 30px;
-    padding-right: 30px;
+.navbar-collapse {
+    margin-left: auto;
+    width: 50%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+@media(max-width: 650px) {
+    .navbar-collapse {
+        display: none;
+    }
 }
 
 .section {
-    padding-bottom: 100px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 60px;
+    padding-right: 60px;
+    
 }
 
 p, li, ul {
     font-family: 'Alegreya Sans', sans-serif;
     color: #541514;
-    
-    
-}
-.navbar-nav {
-    list-style-type: none;
+
 }
 
+
+.container-fluid {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    padding-left: 10px;
+    padding-right: 10px;
+}
 
 .storefront {
     border-radius: 20px;
-    width: 400px;
-    float: left;
-    margin-left: 30px;
-    margin-bottom: 30px;
+    width: 100%;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.10));
 }
 
-.iframe {
-    float: right;
+#intro-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
+
+#intro-section > div {
+    width: 45%;
+}
+
+@media(max-width:750px) {
+    #intro-section {
+        flex-direction: column;
+    }
+
+    #intro-section > div {
+        width: 100%;
+    }
+}
+
+#location-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#location-section > div {
+    width: 45%;
+}
+
+
+
+
 
 .driving-instructions, .transit-instructions {
     display: flex;
@@ -58,7 +109,11 @@ p, li, ul {
 }
 
 .map-container {
-    border-radius: 10;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    overflow: hidden;
+    border-radius: 15px;
 }
 
 .addition, .parking {
