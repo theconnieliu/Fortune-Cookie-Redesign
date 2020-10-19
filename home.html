@@ -11,10 +11,11 @@
 <body>
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
         <div class="container-fluid">
+       
           <img class= "logo" alt= "Golden Gate Fortune Cookie Factory Logo" src= "images/logo.png">
           <h3 class= "brand-name">GOLDEN GATE FORTUNE COOKIE FACTORY</h3>
+     
             <div class="collapse navbar-collapse">
-
                     <span class="nav-item">About</span>
                     <span class="nav-item">Press</span>
                     <span class="nav-item">Visit</span>
@@ -22,7 +23,12 @@
                     <span class="nav-item">Contact</span>
                     <span class="nav-item">Shop</span>
                     <span class="nav-item">中文</span>
-
+            </div>
+            <!--Animated Icon code from w3schools tutorial (https://www.w3schools.com/howto/howto_css_menu_icon.asp)-->
+            <div class="container" onclick="myFunction(this)">
+              <div class="bar1"></div>
+              <div class="bar2"></div>
+              <div class="bar3"></div>
             </div>
         </div>
     </nav>
@@ -276,6 +282,8 @@
 </footer>
 
 <script>
+
+  //Script for collapsibles, from W3schools tutorial (https://www.w3schools.com/howto/howto_js_collapsible.asp)
   var coll = document.getElementsByClassName("collapsible");
   var i;
   
@@ -289,6 +297,10 @@
         content.style.maxHeight = content.scrollHeight + "px";
       } 
     });
+  }
+
+  function myFunction(x) {
+  x.classList.toggle("change");
   }
   </script>
   
