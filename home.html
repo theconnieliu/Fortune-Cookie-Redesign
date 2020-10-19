@@ -133,11 +133,15 @@
     </div>
     <div class= "add-on">
         <div class = "card" id= "parking-garages">
-            <div class="card-header">
-                <p><b>Parking Garages</b></p>
-            </div>
+          <button class="collapsible card-header" id= parking-button>
+            <div class= "full-button card-header">
+              <b>Parking Garages</b>
+              <i class="arrow down"></i>
+          </div>
+          </button>
+          
+          <div class="content">
             <div class="additional-body">
-
               <span>
                 <span class= "garage-name">Chinatown Parking Garage</span><br>
                 728 Pacific Avenue<br>
@@ -173,6 +177,7 @@
                 Closes 10PM
             </span>
             </div>
+          </div>
         </div>
         </div>
 
@@ -269,4 +274,22 @@
 <footer>
 
 </footer>
+
+<script>
+  var coll = document.getElementsByClassName("collapsible");
+  var i;
+  
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.maxHeight){
+        content.style.maxHeight = null;
+      } else {
+        content.style.maxHeight = content.scrollHeight + "px";
+      } 
+    });
+  }
+  </script>
+  
 </html>

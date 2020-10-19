@@ -116,7 +116,6 @@ li {
     padding-left: 60px;
     padding-right: 60px;
     padding-bottom: 40px;
-    
 }
 
 .storefront {
@@ -142,7 +141,6 @@ li {
     text-align: center;
     font-weight: 500;
     margin-right: 10px;
-
 }
 
 .buttons {
@@ -169,7 +167,6 @@ button:hover {
     width: 45%;
 }
 
-
 #location-section {
     display: flex;
     flex-direction: row;
@@ -193,27 +190,18 @@ button:hover {
     .button-nav {
         margin-bottom: 10px;
     }
-    
-    
 }
 
 .link, a{
     font-family: 'Alegreya Sans', sans-serif;
     font-weight: 500;
     color: #F16D7B;
-    text-decoration: none;
+    text-decoration: underline;
+    
 }
 
 #blue-link {
     color: #598588;
-}
-
-
-
-.driving-instructions, .transit-instructions {
-    display: flex;
-    justify-content: center;
-    
 }
 
 .map-container {
@@ -224,6 +212,12 @@ button:hover {
     border-radius: 10px;
     height: 300px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.10));
+}
+
+.driving-instructions, .transit-instructions {
+    display: flex;
+    justify-content: center;
+    
 }
 
 .add-on {
@@ -265,6 +259,50 @@ button:hover {
     padding-left: 20px;
     padding-bottom: 20px;
 }
+
+/*  COLLAPSABLE PARKING GARAGE  */
+
+.full-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 18px;
+    color: #541514;
+}
+
+#parking-button {
+    background-color: #FAF7F2; 
+    border: none;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.full-button:hover {
+    color: #F16D7B;
+}
+
+.arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+  
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+
+.content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #FAF7F2;
+  }
 
 @media(max-width: 850px) {
     .driving-instructions, .transit-instructions {
