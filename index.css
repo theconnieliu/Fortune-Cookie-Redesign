@@ -27,10 +27,16 @@ h4 {
     font-size: 20px;
 }
 
-p, li, ul {
+p, ul {
     font-family: 'Alegreya Sans', sans-serif;
     color: #541514;
     font-size: 20px;
+}
+
+li {
+    font-family: 'Alegreya Sans', sans-serif;
+    color: #541514;
+    font-size: 15px;
 }
 
 .brand-name {
@@ -114,7 +120,7 @@ p, li, ul {
 }
 
 .storefront {
-    border-radius: 20px;
+    border-radius: 10px;
     width: 100%;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.10));
 }
@@ -122,6 +128,34 @@ p, li, ul {
 .slogan {
     font-family: 'Alegreya Sans', sans-serif;
     font-weight: 700;
+}
+
+.button-nav {
+    background-color: #F16D7B;
+    border: none;
+    border-radius: 10px;
+    height: 50px;
+    width: 50%;
+    color: #FFF5E0;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 500;
+    margin-right: 10px;
+
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+}
+
+button:hover {
+    background-color: #FF9FAA;
+}
+
+.nav-item:hover {
+    color: #F16D7B;
 }
 
 #intro-section {
@@ -148,17 +182,22 @@ p, li, ul {
 }
 
 @media(max-width:750px) {
-    #intro-section, #location-section {
+    #intro-section, #location-section, .buttons {
         flex-direction: column;
     }
 
-    #intro-section > div, #location-section > div {
+    #intro-section > div, #location-section > div, .button-nav {
         width: 100%;
     }
+
+    .button-nav {
+        margin-bottom: 10px;
+    }
+    
     
 }
 
-.directions-link {
+.pink-link {
     font-weight: 500;
     color: #F16D7B;
 }
@@ -174,7 +213,7 @@ p, li, ul {
     flex-direction: row;
     justify-content: flex-end;
     overflow: hidden;
-    border-radius: 15px;
+    border-radius: 10px;
     height: 300px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.10));
 }
@@ -186,21 +225,31 @@ p, li, ul {
 
 .card {
     background-color: #FAF7F2;
-    border-radius: 20px;
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.10));
     color:#541514;
     font-size: 15px;
     line-height: 1.3em;
     margin: 10px;
-    width: 250px;
+    width: 30%;
+}
+
+.card-header {
+    padding-left: 20px;
+   
 }
 
 .card-body {
     display: flex;
-    margin: 20px;
+    padding-right: 20px;
+}
+
+.additional-body {
+    padding-left: 20px;
+    padding-bottom: 20px;
 }
 
 .phone-number {
