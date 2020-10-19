@@ -4,31 +4,37 @@
 }
 body {
     background-color: #FFF5E0;
-    line-height: 1.5em;
-    
+    line-height: 1.5em;   
 }
 
-h1, h2, h3, h5, footer, .nav-item {
+h1, h2, h3, h5, footer, .nav-item, .bottom-nav-item {
     font-family: 'Alegreya', serif;  
     color: #541514;
-    
 }
 
 h1 {
     font-weight: 800;
     letter-spacing: 1px;
 }
+
 h2 {
-    font-weight: 700px;
+    font-weight: 700;
 }
 
 h4 {
     font-family: 'Alegreya Sans', sans-serif;
     color:#F16D7B;
+    font-size: 20px;
 }
 
-hr {
+p, li, ul {
+    font-family: 'Alegreya Sans', sans-serif;
     color: #541514;
+    font-size: 20px;
+}
+
+.brand-name {
+    font-size: 25px;
 }
 
 .navbar {
@@ -37,6 +43,7 @@ hr {
 
 .nav-item {
     font-weight: 700;
+    font-size: 20px;
 }
 
 .navbar-nav {
@@ -87,7 +94,7 @@ hr {
 }
 
 .stripes {
-    padding-bottom: 40px;
+    padding-bottom: 50px;
 }
 
 .divider {
@@ -104,12 +111,6 @@ hr {
     padding-right: 60px;
     padding-bottom: 40px;
     
-}
-
-p, li, ul {
-    font-family: 'Alegreya Sans', sans-serif;
-    color: #541514;
-
 }
 
 .storefront {
@@ -139,6 +140,7 @@ p, li, ul {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 }
 
 #location-section > div {
@@ -208,6 +210,30 @@ p, li, ul {
 .email {
     color: #F16D7B;
 }
+
+.bottom-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 12px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 30px;
+}
+
+.bottom-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.bottom-nav-item {
+    font-weight: 700;
+    font-size: 15px;
+    
+}
+
 
 footer {
     display: flex;
