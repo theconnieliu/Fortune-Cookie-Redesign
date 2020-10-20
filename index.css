@@ -1,3 +1,7 @@
+html {
+    font-size: 16px;
+}
+
 .logo {
     max-width: 70px;
     padding-right: 10px;
@@ -23,7 +27,7 @@ h2 {
 
 h4 {
     font-family: 'Alegreya Sans', sans-serif;
-    color:#F16D7B;
+    color: #598588;
     font-size: 20px;
 }
 
@@ -84,6 +88,11 @@ li {
     background-color: #541514;
     margin: 6px 0;
     transition: 0.4s;
+  }
+
+  .bar1:hover, .bar2:hover, .bar3:hover {
+      
+      background-color: #598588;
   }
   
   /* Rotate first bar */
