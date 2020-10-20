@@ -28,23 +28,23 @@ h2 {
 h4 {
     font-family: 'Alegreya Sans', sans-serif;
     color: #598588;
-    font-size: 20px;
+    font-size: 1.2rem;
 }
 
 p, ul {
     font-family: 'Alegreya Sans', sans-serif;
     color: #541514;
-    font-size: 20px;
+    font-size: 1.2rem;
 }
 
 li {
     font-family: 'Alegreya Sans', sans-serif;
     color: #541514;
-    font-size: 15px;
+    font-size: 1rem; 
 }
 
 .brand-name {
-    font-size: 25px;
+    font-size: 1.5rem;
 }
 
 .navbar {
@@ -53,7 +53,7 @@ li {
 
 .nav-item {
     font-weight: 700;
-    font-size: 20px;
+    font-size: 1.3rem;
 }
 
 .navbar-nav {
@@ -90,10 +90,15 @@ li {
     transition: 0.4s;
   }
 
-  .bar1:hover, .bar2:hover, .bar3:hover {
-      
+  .container:hover > .bar1 {
       background-color: #598588;
   }
+  .container:hover > .bar2 {
+    background-color: #598588;
+}
+.container:hover > .bar3 {
+    background-color: #598588;
+}
   
   /* Rotate first bar */
   .change .bar1 {
@@ -222,7 +227,7 @@ li {
     width: 50%;
     color: #FFF5E0;
     font-family: 'Alegreya Sans', sans-serif;
-    font-size: 18px;
+    font-size: 1.1rem;
     text-align: center;
     font-weight: 500;
     margin-right: 10px;
@@ -308,6 +313,7 @@ button:hover {
 .add-on {
     display: flex;
     justify-content: center;
+    
 }
 
 .card {
@@ -318,7 +324,7 @@ button:hover {
     align-items: left;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.10));
     color:#541514;
-    font-size: 15px;
+    font-size: 1rem;
     line-height: 1.3em;
     margin: 10px;
     width: 30%;
@@ -353,7 +359,7 @@ button:hover {
     justify-content: space-between;
     align-items: center;
     font-family: 'Alegreya Sans', sans-serif;
-    font-size: 18px;
+    font-size: 1.1rem;
     color: #541514;
 }
 
@@ -374,6 +380,7 @@ button:hover {
     display: inline-block;
     padding: 3px;
 }
+
   
 .down {
     transform: rotate(45deg);
@@ -399,7 +406,7 @@ button:hover {
 
     .card {
         width: 100%;
-    }
+    } 
 }
 
 @media(max-width: 500px) {
@@ -410,6 +417,30 @@ button:hover {
         padding-left: 30px;
         padding-right: 30px;
         padding-bottom: 40px;
+    }
+    .divider {
+        margin-bottom: 30px;
+    }
+
+    /* Resize texts */
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.0rem;
+    }
+    h4, p, ul {
+        font-size: 0.9rem;
+    }
+    li, .card {
+        font-size: 0.8rem;
+    }
+    .brand-name {
+        font-size: 0.9rem;
+    }
+    .button-nav, .full-button {
+        font-size: 0.8rem;
     }
 }
 
@@ -429,7 +460,7 @@ button:hover {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    font-size: 12px;
+    
     padding-left: 60px;
     padding-right: 60px;
     padding-bottom: 30px;
@@ -444,8 +475,7 @@ button:hover {
 
 .bottom-nav-item {
     font-weight: 700;
-    font-size: 15px;
-    
+    font-size: 0.9rem;
 }
 
 
